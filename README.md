@@ -22,7 +22,7 @@ You can fork this repository and deploy it on Banana as is, or customize it base
 
 ```python
 inputs = {
-    "image": "your_image_url",
+    "image": "your_image_url"
 }
 ```
 
