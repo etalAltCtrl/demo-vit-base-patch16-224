@@ -11,7 +11,7 @@
     "outputs": {
         "output": {
             "type": "string",
-            "path": "output.output"
+            "path": "output"
         }
     }
 }
