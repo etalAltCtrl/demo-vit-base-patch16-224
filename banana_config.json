@@ -9,8 +9,7 @@
     ],
     "outputs": {
         "output": {
-            "type": "image",
-            "source": "base64",
+            "type": "string",
             "path": "output"
         }
     }
