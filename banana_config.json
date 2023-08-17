@@ -8,7 +8,7 @@
             "required": true
         }
     ],
-    "outputs": {
+    "output": {
         "output": {
             "type": "string",
             "path": "output"
