@@ -4,7 +4,7 @@
         {
             "name": "image",
             "type": "file",
-            "mimes": ["image/png","image/jpeg"],
+            "mimes": ["image/png", "image/jpeg"],
             "required": true
         }
     ],
