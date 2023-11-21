@@ -30,4 +30,4 @@ EXPOSE 8000
 CMD python3 -u app.py
 
 # Entrypoint command
-CMD sh -c "./entrypoint.sh"
+CMD ./entrypoint.sh
