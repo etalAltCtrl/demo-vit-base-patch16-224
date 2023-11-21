@@ -27,7 +27,7 @@ ADD . .
 
 EXPOSE 8000
 
-RUN python3 -u app.py
+# RUN python3 -u app.py
 
 # Entrypoint command
 CMD sh -c "./entrypoint.sh"
